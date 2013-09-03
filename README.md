@@ -1,10 +1,10 @@
-BMP085_Breakout
+BMP085 Breakout
 ===============
 
 [![BMP085](https://dlnmh9ip6v2uc.cloudfront.net/images/products/1/1/2/8/2/11282-01a_i_ma.jpg)  
 *BMP085 Breakout Board (SEN-11282)*](https://www.sparkfun.com/products/11282)
 
-This is a breadboard friendly breakout board for the EOL'ed Bosch MPB085 high-precision, low-power digital barometer. 
+This is a breadboard friendly breakout board for the EOL'ed Bosch BMP085 high-precision, low-power digital barometer. 
 
 Repository Contents
 -------------------
