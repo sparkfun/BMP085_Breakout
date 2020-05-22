@@ -138,8 +138,6 @@ char bmp085Read(unsigned char address)
   Wire.endTransmission();
   
   Wire.requestFrom(BMP085_ADDRESS, 1);
-  while(!Wire.available())
-    ;
     
   return Wire.read();
 }
@@ -156,8 +154,7 @@ int bmp085ReadInt(unsigned char address)
   Wire.endTransmission();
   
   Wire.requestFrom(BMP085_ADDRESS, 2);
-  while(Wire.available()<2)
-    ;
+  
   msb = Wire.read();
   lsb = Wire.read();
   
@@ -206,9 +203,6 @@ unsigned long bmp085ReadUP()
   Wire.endTransmission();
   Wire.requestFrom(BMP085_ADDRESS, 3);
   
-  // Wait for data to become available
-  while(Wire.available() < 3)
-    ;
   msb = Wire.read();
   lsb = Wire.read();
   xlsb = Wire.read();
